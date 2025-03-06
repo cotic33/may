@@ -2,6 +2,49 @@
 
 /* Document
    ========================================================================== */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #ffffff;
+    color: hsl(0, 7%, 53%);
+    padding: 10px 0;
+    text-align: center;
+    nav { display: flex; gap: 15px; }
+        }
+        .container {
+            width: 80%;
+            margin: 40px;
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #000000;
+        }
+        .section {
+            margin-bottom: 60px;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .section p {
+            line-height: 1.6;
+        }
+        .section a {
+            color: #3a3a3a;
+            text-decoration: none;
+        }
+        .section a:hover {
+            text-decoration: underline;
+        }
 
 /**
  * 1. Correct the line height in all browsers.
