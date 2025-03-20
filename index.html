@@ -72,47 +72,6 @@
             <h2>Речные прогулки</h2>
             <p>Речные прогулки по рекам и каналам  вам будут предлагать на каждом шагу. Сразу уточняйте, в какое место возвращается ваш кораблик. Если вы хотите сэкономить, то лучше заранее купите билет на сайте, заодно и выберете нужный вам маршрут — на месте вы не сможете сообразить, что за маршрут вам предлагается и будете разочарованы, если не увидите желаемых достопримечательностей. В прохладную погоду вам, конечно, предложат плед, но все же лучше утеплиться, чтоб за часовую поездку не простудиться. О ночной прогулке по Неве с разводными мостами также лучше позаботиться заранее, купив билет через интернет.</p>
             <img src="rech.jpg" alt="Речные прогулки">
-
-        <body>
-      
-        <!-- Кнопка помощи -->
-        <button id="helpButton">Остались вопросы?</button>
-      
-        <!-- Полупрозрачный фон -->
-          <div id="overlay"></div>
-          <div id="helpPanel">
-          <h2>Если у вас появились вопросы, свяжитесь с нами:</h2>
-          <ul>
-            <li><a >По почте: redkieanimals@gmail.com</a></li>
-            <li><a ></a>По номеру телефона: +7 *** *** ** **</a></li>
-          </ul>
-          <p>Спасибо, что помогаете сделать наш сайт лучше</p>
-          <button id="closeButton">Закрыть</button>
-        </div>
-      
-        <script>
-          const helpButton = document.getElementById("helpButton");
-          const helpPanel = document.getElementById("helpPanel");
-          const closeButton = document.getElementById("closeButton");
-          const overlay = document.getElementById("overlay");
-      
-          helpButton.addEventListener("click", () => {
-            helpPanel.style.display = "block";
-            overlay.style.display = "block";
-          });
-      
-          closeButton.addEventListener("click", () => {
-            helpPanel.style.display = "none";
-            overlay.style.display = "none";
-          });
-      
-          overlay.addEventListener("click", () => {
-            helpPanel.style.display = "none";
-            overlay.style.display = "none";
-          });
-      
-        </script>   
-        </body>    
                 
     <footer>
         <p>&copy; 2025 Санкт-Петербург. Все права защищены.</p>
