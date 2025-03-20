@@ -74,6 +74,109 @@
             <img src="rech.jpg" alt="Речные прогулки">
                 
 
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Кнопка помощи</title>
+        <style>
+          /* Стили для кнопки */
+          #helpButton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000; /* Убедитесь, что кнопка всегда поверх остального */
+          }
+      
+          /* Стили для панели помощи */
+          #helpPanel {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1001; /* Убедитесь, что панель поверх кнопки */
+            display: none; /* Скрываем панель по умолчанию */
+          }
+      
+          #helpPanel h2 {
+            margin-top: 0;
+          }
+      
+          #helpPanel button {
+            background-color: #dc3545;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+          }
+      
+          /* Стили для полупрозрачного фона */
+          #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000; /* Поверх всего остального, но под панелью */
+            display: none;
+          }
+        </style>
+      </head>
+      <body>
+      
+        <!-- Кнопка помощи -->
+        <button id="helpButton">Остались вопросы?</button>
+      
+        <!-- Полупрозрачный фон -->
+        <div id="overlay"></div>
+      
+        <!-- Панель помощи -->
+        <div id="helpPanel">
+          <h2>Если у вас появились вопросы, свяжитесь с нами:</h2>
+          <ul>
+            <li><a >По почте: redkieanimals@gmail.com</a></li>
+            <li><a ></a>По номеру телефона: +7 *** *** ** **</a></li>
+          </ul>
+          <p>Спасибо, что помогаете сделать наш сайт лучше</p>
+          <button id="closeButton">Закрыть</button>
+        </div>
+      
+        <script>
+          const helpButton = document.getElementById("helpButton");
+          const helpPanel = document.getElementById("helpPanel");
+          const closeButton = document.getElementById("closeButton");
+          const overlay = document.getElementById("overlay");
+      
+          helpButton.addEventListener("click", () => {
+            helpPanel.style.display = "block";
+            overlay.style.display = "block";
+          });
+      
+          closeButton.addEventListener("click", () => {
+            helpPanel.style.display = "none";
+            overlay.style.display = "none";
+          });
+      
+          overlay.addEventListener("click", () => {
+            helpPanel.style.display = "none";
+            overlay.style.display = "none";
+          });
+      
+        </script>
+      
+      </body>
+      </html>
     
     <footer>
         <p>&copy; 2025 Санкт-Петербург. Все права защищены.</p>
